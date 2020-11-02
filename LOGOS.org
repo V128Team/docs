@@ -1,0 +1,21 @@
+* When do I need specific permission to use a v128 logo?
+
+The v128 logos are not placed under the GPLv2, even though the source is made
+available here. These logos are not to be derived from, nor are they to be used
+for any purpose other than as artwork associated with the v128 Home Computer
+project.
+
+These logos are Copyright(C) 2020, June Tate-Gans, All Rights Reserved.
+
+A license to use these logos for the v128 is hereby granted by June Tate-Gans to
+the v128 Home Computer project.
+
+* Which files does this apply to?
+
+  - buddy-icon.png
+  - buddy-icon.svg
+  - buddy-icon.xcf
+  - v128-logo.svg
+  - v128-logo.png
+  - v128-logo-white.svg
+  - v128-logo-no-subtitle.svg
