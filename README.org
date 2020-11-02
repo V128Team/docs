@@ -1,0 +1,11 @@
+* The V128 Home Computer System
+
+#+CAPTION: V128 Logo
+#+NAME: fig:v128-logo
+[[./v128-logo.png]]
+
+** What is this?
+
+These repositories (all of those under the V128Team github team) comprise the
+operating system, schematics, hardware designs, and materials to create what
+amounts to a Commodore 128Dcr *mini*.
