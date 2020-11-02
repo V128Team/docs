@@ -8,10 +8,20 @@ These repositories (all of those under the V128Team github team) comprise the
 operating system, schematics, hardware designs, and materials to create what
 amounts to a Commodore 128Dcr *mini*.
 
+** Requirements to build the source
+
+Let's get this out of the way: the v128 Linux distribution, VICE Embedded, is
+designed around Debian Bullseye (the current testing distribution of Debian).
+This means that to build it, you have to be running on a Debian system capable
+of running Docker and ~whale-builder~ to build packages.
+
+This particular build system has been designed and built to run on Ubuntu 20.04,
+but should behave well enough on Debian as well.
+
 ** How do I check this out?
 
-First, you'll need to install a copy of Android's `repo` tool. Once you've done
-that, do the following:
+First, you'll need to install a copy of [[https://android.googlesource.com/tools/repo][Android's repo tool]]. Once you've
+installed that, you can do the following:
 
   : host:~$ mkdir v128
   : host:~$ cd v128
