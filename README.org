@@ -13,17 +13,17 @@ amounts to a Commodore 128Dcr *mini*.
 First, you'll need to install a copy of Android's `repo` tool. Once you've done
 that, do the following:
 
-  : mkdir v128
-  : cd v128
-  : repo init -u https://github.com/V128Team/
+  : user@host:~$ mkdir v128
+  : user@host:~$ cd v128
+  : user@host:v128$ repo init -u https://github.com/V128Team/
   : # ... answer any prompts ...
-  : repo sync
+  : user@host:v128$ repo sync
 
 That will pull down the source code. From there, do this:
 
-  : source build/setup.sh
-  : m prereqs
-  : m rootfs
+  : user@host:v128$ source build/setup.sh
+  : user@host:v128$ m prereqs
+  : user@host:v128$ m rootfs
 
 The first target, ~prereqs~, will ~apt-get install~ all the dependencies needed
 to build a filesystem image and run the simulation of the system.
