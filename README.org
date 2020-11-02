@@ -25,12 +25,12 @@ That will pull down the source code. From there, do this:
   : m prereqs
   : m rootfs
 
-The first target, `prereqs`, will `apt-get install` all the dependencies needed
+The first target, ~prereqs~, will ~apt-get install~ all the dependencies needed
 to build a filesystem image and run the simulation of the system.
 
 From there, the second target will actually build all of the artifacts. They
-will be placed in the `out/` directory. Aside from these, there are other
-targets available -- all written as .PHONY targets in the makefiles in the
-`build/` directory.
+will be placed in the ~out/~ directory. Aside from these, there are other
+targets available -- all written as ~.PHONY~ targets in the makefiles in the
+~build/~ directory.
 
 Once it's built, you can run the simulator using the `simulate` target.
