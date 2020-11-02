@@ -1,5 +1,3 @@
-* The V128 Home Computer System
-
 #+CAPTION: V128 Logo
 #+NAME: fig:v128-logo
 [[./v128-logo.png]]
@@ -9,3 +7,30 @@
 These repositories (all of those under the V128Team github team) comprise the
 operating system, schematics, hardware designs, and materials to create what
 amounts to a Commodore 128Dcr *mini*.
+
+** How do I check this out?
+
+First, you'll need to install a copy of Android's `repo` tool. Once you've done
+that, do the following:
+
+  : mkdir v128
+  : cd v128
+  : repo init -u https://github.com/V128Team/
+  : # ... answer any prompts ...
+  : repo sync
+
+That will pull down the source code. From there, do this:
+
+  : source build/setup.sh
+  : m prereqs
+  : m rootfs
+
+The first target, `prereqs`, will `apt-get install` all the dependencies needed
+to build a filesystem image and run the simulation of the system.
+
+From there, the second target will actually build all of the artifacts. They
+will be placed in the `out/` directory. Aside from these, there are other
+targets available -- all written as .PHONY targets in the makefiles in the
+`build/` directory.
+
+Once it's built, you can run the simulator using the `simulate` target.
