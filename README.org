@@ -26,18 +26,14 @@ installed that, you can do the following:
   : host:~$ mkdir v128
   : host:~$ cd v128
   : host:~/v128$ repo init -u https://github.com/V128Team/
-  :
   : # ... answer any prompts ...
-  :
   : host:~/v128$ repo sync
 
 That will pull down the source code. From there, do this:
 
   : host:~/v128$ source build/setup.sh
   : host:~/v128$ m prereqs
-  :
   : # ... answer any prompts ...
-  :
   : host:~/v128$ m rootfs
 
 The first target, ~prereqs~, will ~apt-get install~ all the dependencies needed
