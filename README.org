@@ -13,9 +13,9 @@ amounts to a Commodore 128Dcr *mini*.
 Let's get this out of the way: the v128 Linux distribution, VICE Embedded, is
 designed around Debian Bullseye (the current testing distribution of Debian).
 This means that to build it, you have to be running on a Debian system capable
-of running Docker and ~whale-builder~ to build packages.
+of running ~debspawn~ to build packages.
 
-This particular build system has been designed and built to run on Ubuntu 20.04,
+This particular build system has been designed and built to run on Ubuntu 20.10,
 but should behave well enough on Debian as well.
 
 ** How do I check this out?
@@ -44,4 +44,6 @@ will be placed in the ~out/~ directory. Aside from these, there are other
 targets available -- all written as ~.PHONY~ targets in the makefiles in the
 ~build/~ directory.
 
-Once it's built, you can run the simulator using the ~simulate~ target.
+Once it's built, you can run the simulator using the ~simulate~ target. Note:
+this will only work for the Udoo boards, since they're x86 machines. On the Pi4
+CM4 module, there is no simulator, unfortunately.
