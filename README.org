@@ -25,7 +25,7 @@ installed that, you can do the following:
 
   : host:~$ mkdir v128
   : host:~$ cd v128
-  : host:~/v128$ repo init -u https://github.com/V128Team/
+  : host:~/v128$ repo init -u https://github.com/V128Team/manifest
   : # ... answer any prompts ...
   : host:~/v128$ repo sync
 
