@@ -1,0 +1,29 @@
+* The v128 Home Computer
+
+** Purpose
+
+Produce a miniature replica of the Commodore 128Dcr home computer, utilizing
+VICE as the emulator, and a unique floppy switching mechanic.
+
+** Features
+
+*** [#A] Dual monitor output.
+*** [#B] Hot-swapping between single- and dual-monitor modes.
+*** [#A] USB keyboard support.
+*** [#A] USB mouse support.
+*** [#A] USB gamepad support.
+*** [#A] Nearly 1:1 mapping of a C128Dcr keyboard to a 104-key keyboard.
+*** [#A] Physical media swapping for the built-in 1571 floppy drive.
+*** [#A] 1:1 mapping between physical media and disk images.
+*** [#A] High performance
+*** [#A] Audio output via HDMI
+*** [#A] 720p video output, at least
+*** [#A] IEC port (DIN port) for connecting external IEC devices via OpenCBM.
+*** [#A] Two 9-pin joystick ports compatible with the original Commodore electrical standard.
+*** [#A] A physical power switch for toggling the machine on and off.
+*** [#A] Ethernet support for remote control and remote development.
+*** [#A] Open source, with as much contributed back as is possible.
+
+** Release Criteria
+
+** Timeline
