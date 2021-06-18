@@ -3,26 +3,115 @@
 ** Purpose
 
 Produce a miniature replica of the Commodore 128Dcr home computer, utilizing
-VICE as the emulator, and a unique floppy switching mechanic.
+VICE as the emulator, and a unique floppy switching mechanic. This will
+replicate the physical experience of using a Commodore 128Dcr, just like the
+real thing would with floppy swapping, keyboard management, and dual-headed
+output.
 
 ** Features
 
 *** [#A] Dual monitor output.
+
+When both HDMI ports are plugged in, the VIC-IIe screen should be visible on one
+monitor, and the VDC screen should be visible on the other.
+
 *** [#B] Hot-swapping between single- and dual-monitor modes.
+
+If only one HDMI port is plugged in, only one of the two video outputs should be
+visible at a time, with menu switching between VIC-IIe and VDC. When a second
+monitor is plugged in, VICE should automatically be set to output video as in
+the dual monitor mode above.
+
 *** [#A] USB keyboard support.
+
+USB keyboards should be supported, no matter the layout. As in with normal VICE
+usage.
+
 *** [#A] USB mouse support.
+
+USB mice should be supported for both 1351 mouse support and light pen support.
+
 *** [#A] USB gamepad support.
+
+USB gamepads should be supported, as in the way VICE typically supports them.
+
 *** [#A] Nearly 1:1 mapping of a C128Dcr keyboard to a 104-key keyboard.
+
+The VICE keymap should be modified to map to the correct positional mapping from
+a 104-key keyboard to the 128's keyboard. An additional key must be identified
+for accessing system features such as floppy assignments and another for
+bringing up the VICE Menu.
+
 *** [#A] Physical media swapping for the built-in 1571 floppy drive.
+
+It should be possible to use a physical "floppy" in a physically emulated
+internal 1571 drive to swap disks in the emulated drive, to replicate the
+physical interaction with a real 128Dcr.
+
 *** [#A] 1:1 mapping between physical media and disk images.
+
+Each "floppy" should have a 1:1 mapping between itself and the disk image it is
+associated with. Ideally, we'd store the bits for the disk image to the "floppy"
+itself, but failing that, we should link somehow to a disk image stored either
+in the internal storage or some network-based storage address.
+
 *** [#A] High performance
+
+We should strive for 60FPS with audio emulation, if possible.
+
 *** [#A] Audio output via HDMI
+
+To keep things simple, audio output should be available via the HDMI ports. IOW,
+drive sounds, SID sounds, etc. should all be output via the HDMI ports.
+
 *** [#A] 720p video output, at least
+
+We're emulating an 80s machine that natively spoke NTSC or PAL. As such, we
+really only need to output those kinds of video signals, and upscaling is
+actually quite useless. Despite this, to maintain compatibility with modern TVs
+and monitors, we should output at least a 720p video signal over HDMI. This
+should provide a good balance between performance and video quality, while still
+retaining enough vertical resolution to be able to toggle between NTSC and PAL
+heights.
+
 *** [#A] IEC port (DIN port) for connecting external IEC devices via OpenCBM.
+
+It should be possible to connect an external IEC device, such as a real 1571
+floppy drive, 1541, or even an IEC printer to an IEC port. VICE should be
+configured with OpenCBM to allow this to function in reality.
+
 *** [#A] Two 9-pin joystick ports compatible with the original Commodore electrical standard.
+
+There should be two 9-pin joystick ports exposed that are compatible with the
+original Commodore electrical standard for joysticks. These should plug into the
+VICE emulation with little effort on the part of the user.
+
 *** [#A] A physical power switch for toggling the machine on and off.
+
+The system should have a momentary soft-power-off power switch for toggling the
+machine's power on and off.
+
 *** [#A] Ethernet support for remote control and remote development.
+
+An ethernet port should be available to expose the VICE monitor on the network,
+and make the device available for remote control via SSH and the VICE monitor
+(if configured that way by the user).
+
 *** [#A] Open source, with as much contributed back as is possible.
+
+Everything in the software, and even the hardware, should be made open source,
+under the most permissible license possible (ideally Apache 2.0, alternatively
+whatever is required for dependencies).
+
+Patches to existing software used in the system should be submitted (if
+possible) to the upstream projects. Code should be available on GitHub for ease
+of access.
+
+*** [#A] As short as possible boot times from power on to 128 screen visibility.
+
+One of the key things with the original 128 was that the time delay from power
+switch on to functioning display and system was very short. The v128 system
+should be as close to this short delay as is possible.
 
 ** Release Criteria
 
