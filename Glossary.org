@@ -1,0 +1,41 @@
+* Electronics and acronym glossary
+
+ - PRD :: Product Requirements Document. Explains what features and requirements
+          are needed to build a product.
+
+ - PDP :: Product Development Process. A process for developing a physical
+          consumer device product that involves several stages to help
+          synchronize electrical hardware, software, and mechanical design work
+          together.
+
+ - P0 :: Prototype Zero. The first stage in developing a hardware product.
+         Usually a prototype board that is not in the final form of the product
+         design. Used to prove out circuit designs and ensure components fit.
+         Can increase monotonically as it goes. Ie: P1, P2, P3.
+
+ - EVT :: Engineering Validation Test. Another form of prototype for a
+          developing product, and part of the product development process, after
+          the P0 stages. This stage of prototype is used to validate an entire
+          electrical design, rather than part of it as in the Pn stages. It is
+          not typically in the shape of the final form factor, but can sometimes
+          be. This is the first stage where software can start integrating with
+          the electrical hardware design. EVT numbers are assigned as in the
+          prototype stage, as in EVT1, EVT2, etc.
+
+ - DVT :: Design Validation Test. Another form of prototype for a developing
+          product, and another stage in the product development process, after
+          the EVT stage. This is used to validate that an electrical design fits
+          into the mechanical design needed for the final form factor. Things
+          such as button placement, fitment checks, enclosure flexure, etc. are
+          validated in this run. Like, the EVT and P0 stages, these are numbered
+          as well.
+
+ - PVT :: Production Validation Test. Another form of prototype for a developing
+          product, and another stage in the product development process, after
+          the DVT stage. This is used to validate that the manufacturing process
+          is solid and produces good results. This can be considered to be a
+          test of the final assembly process, and just before the final stage of
+          mass production.
+
+ - MP :: Mass Production. The final stage of the product development process,
+         and the stage at which production runs reach mass quantities.
