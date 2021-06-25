@@ -1,12 +1,11 @@
-* The v128 Home Computer
+* The v128 Home Computer Product Requirements Document
 
 ** Purpose
 
 Produce a miniature replica of the Commodore 128Dcr home computer, utilizing
-VICE as the emulator, and a unique floppy switching mechanic. This will
-replicate the physical experience of using a Commodore 128Dcr, just like the
-real thing would with floppy swapping, keyboard management, and dual-headed
-output.
+VICE as the emulator, and replicate the physical experience of using a Commodore
+128Dcr, just like the real thing would with floppy swapping, keyboard
+management, and dual-headed output.
 
 ** Features
 
@@ -90,6 +89,12 @@ VICE emulation with little effort on the part of the user.
 
 The system should have a momentary soft-power-off power switch for toggling the
 machine's power on and off.
+
+*** [#A] A reset button to perform a hard reset as in the real 128 reset button
+
+The 128 had a physical push-button reset button on the side of the machine that
+would reset the system. It would be good to have a reset button that only resets
+VICE, rather than rebooting the Pi4.
 
 *** [#A] Ethernet support for remote control and remote development.
 
